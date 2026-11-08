@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>☁️</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <header>
+        <h1>Quiz Yourself</h1>
+        <h2 id="subtitle">Time to test what you know. Let's see how many you can get correct.</h2>
+    </header>
+
+    <main>
+
+    <!-- main display -->
+        <section id="quiz-screen">
+            <form>
+                <fieldset>
+                    <legend id="question">Loading question...</legend>
+                    <div class="answers">
+                        <button type="button" class="choice-button"></button>
+                        <button type="button" class="choice-button"></button>
+                        <button type="button" class="choice-button"></button>
+                        <button type="button" class="choice-button"></button>
+                    </div>
+                </fieldset>
+                </form>
+
+        <!-- feedback -->
+        <section id="feedback-container">
+            <span id="feedback"></span>
+        </section>
+
+    <!-- navigating questions-->
+    <section class = "navigation">
+            <button type="button" id="next-question">Next question</button>
+            <button type="button" id="prev-question">Previous question</button>
+        </section>
+    </section>
+
+    <!--feedback-->
+    <section id="feedback-container">
+        <span id="feedback"></span>
+        <p id="explanation-text" class="hide"></p>
+    </section>
+
+    <!-- results -->
+    <section id="results" class="hide">
+        <h3>Completed!</h3>
+        <p class="score-display">Your score:<strong id="final-score">0</p>
+        <button type="button" id="restart-quiz">Try Again</button>
+    </section>
+    </main>
+
+    <footer>
+        <p>Created by Holly for LaunchCode SWD 2026</p>
+    </footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
